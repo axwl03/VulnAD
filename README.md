@@ -1,6 +1,6 @@
 # VulnAD
 
-VulnAD consists of easy PowerShell scripts for building vulnerable ActiveDirectory environment for pentesting.
+VulnAD consists of easy PowerShell scripts to build vulnerable ActiveDirectory environment for pentesting.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ Take example 1 as an example, the steps are:
 
 1. Install the VMs which is described in `examples/1/README.md`
 2. Clone this repo to everyone VM
-3. Execute the corresponding script on each VM, e.g. install `examples/1/dc01.ps1` on the VM that you want it to be `dc01`.
+3. Modfiy and execute the corresponding script on each VM, e.g. install `examples/1/dc01.ps1` on the VM that you want it to be `dc01`.
 4. Attack it!
 
 Also, a script might reboot several times and require you to manually run it again.
