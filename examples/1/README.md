@@ -13,7 +13,7 @@ Operating Systems:
 - `ws02`: Windows 10
 
 Windows Server 2022 and Windows 10 21H2 are tested.
-For Windows 10 machines, please run an elevated shell and execute `Set-ExecutionPolicy Unrestricted Force` 
+For Windows 10 machines, please run an elevated shell and execute `Set-ExecutionPolicy Unrestricted -Force` 
 in order to execute script.
 
 ## Installation
@@ -26,7 +26,7 @@ Please make sure the installation order:
 4. `ws02`
 5. `dc02`
 
-To install it, clone this repo to each machine and modify the TODOs in the script.
+To install it, clone this repo to each machine and modify the `TODO`s in the script.
 cd into `examples/1` and execute the corresponding script in an elevated shell.
 For example, execute dc01.ps1 on the VM that you want it to become `dc01`:
 ```powershell
