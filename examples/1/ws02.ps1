@@ -33,7 +33,6 @@ Switch ($Progress) {
         Set-NetFirewallRule -DisplayGroup "Network Discovery" -Profile "Any" -Enabled true
         Set-NetFirewallRule -DisplayGroup "File and Printer Sharing" -Profile "Any" -Enabled true
         Set-NetFirewallRule -DisplayGroup "Remote Scheduled Tasks Management" -Profile "Any" -Enabled true
-        net localgroup administrators TAIPEI\Chopper /add
         Write-Output 3 > $ProgressFile
     }
     {$_ -le 3} {

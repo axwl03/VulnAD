@@ -44,6 +44,7 @@ Switch ($Progress) {
         Add-WritePermissionToUser -DistinguishedName "CN=WS02,CN=Computers,DC=taipei,DC=victim,DC=com" -User Sanji
         Set-UnconstainedDelegation -Identity ws01$
         Set-ConstrainedDelegation -Identity ws02$ -AllowedSPN 'CIFS/ws01'
+        Invoke-Command -ComputerName ws02 -ScriptBlock {net localgroup administrators TAIPEI\Chopper /add}
         Write-Output 3 > $ProgressFile
     }
     {$_ -le 3} {
