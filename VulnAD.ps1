@@ -297,7 +297,7 @@ Make user Luffy AS-REPRoastable.
         [String]
         $User
     )
-    Set-ADAccountControl -Identity Luffy -DoesNotRequirePreAuth $true
+    Set-ADAccountControl -Identity $User -DoesNotRequirePreAuth $true
 }
 
 function Set-UnconstainedDelegation {
