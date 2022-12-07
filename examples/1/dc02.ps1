@@ -41,7 +41,7 @@ Switch ($Progress) {
         Set-ASREPRoasting -User Usopp
         Set-Kerberoasting -User Chopper -SPN "roast/ws02.victim.com"
         net group "Domain Admins" Luffy /add /Domain
-        Add-WritePermissionToUser -DistinguishedName "CN=WS02,CN=Computers,DC=taipei,DC=victim,DC=com" -User Sanji
+        Add-WritePermissionToUser -DistinguishedName "CN=WS01,CN=Computers,DC=taipei,DC=victim,DC=com" -User Sanji
         Set-UnconstainedDelegation -Identity ws01$
         Set-ConstrainedDelegation -Identity ws02$ -AllowedSPN 'CIFS/ws01'
         Invoke-Command -ComputerName ws02 -ScriptBlock {net localgroup administrators TAIPEI\Chopper /add}
